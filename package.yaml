@@ -1,0 +1,38 @@
+name: cprelude
+version: 0.0.0.0
+synopsis:
+maintainer: Julian K. Arni <jkarni@gmail.com>
+license: BSD3
+github: jkarni/cprelude
+
+ghc-options: -Wall
+
+tested-with: "GHC == 7.2.2, GHC == 7.4.2, GHC == 7.6.3, GHC == 7.8.4, GHC == 7.10.3, GHC == 8.0.1"
+
+
+dependencies:
+  - base >= 4.3 && < 5
+  - base-compat == 0.9.*
+  - safe
+  - text
+  - text-show
+  - bytestring
+  - transformers-compat
+  - transformers
+  - string-conversions
+  - profunctors
+  - contravariant
+  # folded into prelude, but needed for compatibility
+  - bifunctors
+  - semigroups
+  - nats
+  - tagged
+  - generic-deriving
+
+default-extensions:
+  - NoImplicitPrelude
+
+library:
+  source-dirs: src
+  dependencies:
+  other-modules: []
