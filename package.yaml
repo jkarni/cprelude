@@ -35,4 +35,4 @@ default-extensions:
 library:
   source-dirs: src
   dependencies:
-  other-modules: []
+  exposed-modules: CPrelude
